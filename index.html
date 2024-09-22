@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/cb8ad03379.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .font-{
+        font-family: "", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="py-11 bg-[#F9F7F3]">
+      <div class="container mx-auto flex items-center justify-between px-8">
+        <button class="btn bg-primary font-bold text-xl text-black">
+          Blog
+        </button>
+        <div class="flex items-center space-x-7">
+          <img src="assets/logo.png" alt="" />
+          <a class="text-2xl font-bold text-black">Donate Bangladesh</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <img src="assets/coin.png" alt="" />
+          <h2 class="text-gray-600 font-bold text-2xl">5500 BDT</h2>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
