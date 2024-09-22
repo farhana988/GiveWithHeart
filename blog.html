@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blog</title>
-</head>
-<body>
-    <h1>hhhhhhhhhhhhhh</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/cb8ad03379.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .font- {
+        font-family: "", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#B4F461",
+              tab: "#ffffff",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="py-11 bg-[#F9F7F3]">
+      <div class="container mx-auto flex items-center justify-between px-8">
+        <button class="btn bg-primary font-bold text-xl text-black">
+          <a href="index.html">Home</a>
+        </button>
+        <div class="hidden lg:flex items-center space-x-7">
+          <img src="assets/logo.png" alt="" />
+          <a class="text-2xl font-bold text-black">Donate Bangladesh</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <img src="assets/coin.png" alt="" />
+          <h2 class="text-gray-600 font-bold text-2xl">5500 BDT</h2>
+        </div>
+      </div>
+    </nav>
+
+    <!-- faq  -->
+    <section class="container mx-auto">
+      <h1 class="px-10 text-4xl lg:text-7xl font-extrabold my-10">Important FAQ</h1>
+      <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
+          what is the document object model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the page so that programs can change the
+            document structure, style, and content. The DOM represents the
+            document as nodes and objects; that way, programming languages can
+            interact with the page.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
+          how do you select an element from the dom?
+        </div>
+        <div class="collapse-content">
+          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
+            The getElementById() method of the Document interface returns an
+            Element object representing the element whose id property matches
+            the specified string. Since element IDs are required to be unique if
+            specified, they're a useful way to get access to a specific element
+            quickly.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
+          what is event delegation in the context of the DOM, and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
+            Event delegation refers to the process of using event propagation
+            (bubbling) to handle events at a higher level in the DOM than the
+            element on which the event originated. It allows us to attach a
+            single event listener for elements that exist now or in the future.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
+          how do you manipulate an element's attributes and styles using the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
+            The classList object only provide methods to change the class of an
+            element. If you want to change other attributes like id , href , or
+            src , you can use the setAttribute() method. The setAttribute()
+            method accepts two arguments: The name of the attribute to set.Dec
+            7, 20
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
