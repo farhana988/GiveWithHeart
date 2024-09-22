@@ -29,22 +29,23 @@
             colors: {
               clifford: "#da373d",
               primary: "#B4F461",
-            },
+              tab:"#ffffff"
+                       },
           },
         },
       };
     </script>
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- navbar -->
     <nav class="py-11 bg-[#F9F7F3]">
       <div class="container mx-auto flex items-center justify-between px-8">
         <button class="btn bg-primary font-bold text-xl text-black">
-          Blog
+          <a href="blog.html">Blog</a>
         </button>
-        <div class="flex items-center space-x-7">
+        <div class="hidden lg:flex items-center space-x-7">
           <img src="assets/logo.png" alt="" />
-          <a class="text-2xl font-bold text-black">Donate Bangladesh</a>
+          <a class=" text-2xl font-bold text-black">Donate Bangladesh</a>
         </div>
         <div class="flex items-center space-x-4">
           <img src="assets/coin.png" alt="" />
@@ -52,5 +53,56 @@
         </div>
       </div>
     </nav>
+
+    <main>
+        <!-- toogle bar -->
+     
+            <div class="container mx-auto mt-8">
+                <div class="flex items-center justify-center mb-6 space-x-4">
+                <button class="btn bg-primary font-bold text-xl text-black ">Donation</button> 
+                <button class="btn font-bold text-xl text-black ">History</button>
+                </div>
+
+
+                <!-- section card -->
+                <!-- first card -->
+                <section class="lg:mx-16 my-20">
+                    <div class="p-10 border-gray-200 border-2 rounded-2xl">
+                        <div class="flex flex-col lg:flex-row space-x-3 lg:space-x-9 space-y-9 lg:space-y-0 ">
+                          <img
+                            src="assets/noakhali.png"
+                            class="rounded-lg lg:w-1/2" />
+                            <div>
+                             
+                                <button>
+                                    <div class="btn flex lg:space-x-3  mb-3">
+                                        <img src="assets/coin.png" alt="" />
+                                        <p> gg</p>
+                                    </div>
+                                </button>
+                               
+                                <h1 class="text-lg lg:text-2xl font-bold text-black">Donate for Flood at Noakhali, Bangladesh</h1>
+                                <p class="text-justify py-6 lg:text-lg text-gray-600">
+                                    The recent floods in Noakhali have caused significant damage to homes  infrastructure.
+                                    Your donation will help provide essential supplies and  to those affected by this disaster.
+                                    Every contribution, big or small, makes  difference. Please join us in supporting the 
+                                    relief efforts and making a positive impact on the lives of those in need.
+                                </p>
+                                <div class="flex flex-col">
+                                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4">
+          
+                                <button class="btn bg-primary font-bold text-xl text-black">Donate Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+               
+
+
+
+    </main>
   </body>
 </html>
