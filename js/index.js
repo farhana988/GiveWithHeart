@@ -3,20 +3,22 @@ function fundCollection(id1, id2, id3) {
   const donating = parseFloat(document.getElementById(id2).value);
   const balance = parseFloat(document.getElementById(id3).innerText);
 
-  if (isNaN(donating) || donating <= 0) {
+  if (isNaN(donating) || donating <= 0 ||balance < donating) {
+    my_modal_1.close(); 
     alert("Please enter a valid donation amount.");
     document.getElementById(id2).value = "";
     return;
   }
   let total = totalamount + donating;
-  if (balance < donating) {
-    alert("eto tk nai");
-    document.getElementById(id2).value = "";
-    return;
-  }
+
+//   if (balance < donating) {
+//     alert("eto tk nai");
+//     document.getElementById(id2).value = "";
+//     return;
+//   }
 
   let remaining = balance - donating;
-
+ 
   document.getElementById(id1).innerText = total;
   document.getElementById(id3).innerText = remaining;
   document.getElementById(id2).value = "";
@@ -24,6 +26,7 @@ function fundCollection(id1, id2, id3) {
   // history
 
   function donationHis(id, donating) {
+
     const his = document.createElement("div");
    
     const date = new Date();
@@ -41,9 +44,9 @@ function fundCollection(id1, id2, id3) {
  
     his.innerHTML = `
         <div class="p-8 m-3 my-6 container mx-auto  border-gray-200 border-2 rounded-2xl">
-            <h2 class="font-bold text-2xl text-black mb-3">
+            <h2 class="font-bold text-lg lg:text-4xl text-black mb-3">
             ${donating} Taka is Donated for ${id}</h2>
-              <p>Date ${formattedDate} (Bangladesh Standard Time)</p>
+              <p class="text-xs lg:text-lg font-medium text-gray-500">Date ${formattedDate} (Bangladesh Standard Time)</p>
         </div>
     `;
     document.getElementById("transaction").appendChild(his);
