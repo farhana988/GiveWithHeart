@@ -144,8 +144,24 @@
                             <div class="flex flex-col">
                                 <input id="feni-donation-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4">
       
-                            <button id="feni-donate" class="btn bg-primary font-bold text-xl text-black">Donate Now</button>
-                            </div>
+                            <button  onclick="my_modal_2.showModal()" id="feni-donate" class="btn bg-primary font-bold text-xl text-black">Donate Now</button>
+                            <!-- Open the modal using ID.showModal() method -->
+
+                            <dialog id="my_modal_2" class="modal">
+                              <div class="modal-box flex flex-col items-center space-y-5">
+                                <h3 class="text-4xl font-extrabold">Congrates!</h3>
+                                <img class=" max-w-full h-auto" src="./assets/coin.png" alt="">
+                                <p class="text-center font-semibold text-xl">
+                                  You have Donated For Humankind <br> <span class=" text-2xl font-extrabold">Successfully</span></p>
+                                <div class="modal-action">
+                                  <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn font-bold ">Close Confirmaion</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </dialog>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -177,8 +193,24 @@
                           <div class="flex flex-col">
                               <input id="quota-donation-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4">
     
-                          <button id="quota-donate" class="btn bg-primary font-bold text-xl text-black">Donate Now</button>
-                          </div>
+                          <button onclick="my_modal_3.showModal()" id="quota-donate" class="btn bg-primary font-bold text-xl text-black">Donate Now</button>
+                            <!-- Open the modal using ID.showModal() method -->
+
+                            <dialog id="my_modal_3" class="modal">
+                              <div class="modal-box flex flex-col items-center space-y-5">
+                                <h3 class="text-4xl font-extrabold">Congrates!</h3>
+                                <img class=" max-w-full h-auto" src="./assets/coin.png" alt="">
+                                <p class="text-center font-semibold text-xl">
+                                  You have Donated For Humankind <br> <span class=" text-2xl font-extrabold">Successfully</span></p>
+                                <div class="modal-action">
+                                  <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn font-bold ">Close Confirmaion</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </dialog>
+                        </div>
                       </div>
                   </div>
               </div>

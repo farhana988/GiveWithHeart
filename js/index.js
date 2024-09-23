@@ -5,6 +5,9 @@ function fundCollection(id1, id2, id3) {
 
   if (isNaN(donating) || donating <= 0 ||balance < donating) {
     my_modal_1.close(); 
+    my_modal_2.close(); 
+    my_modal_3.close(); 
+
     alert("Please enter a valid donation amount.");
     document.getElementById(id2).value = "";
     return;
