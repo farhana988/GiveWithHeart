@@ -38,7 +38,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="py-11 bg-[#F9F7F3]">
+    <nav class="py-8 bg-transparent sticky top-0 backdrop-blur-3xl z-50">
       <div class="container mx-auto flex items-center justify-between px-8">
         <button class="btn bg-primary font-bold text-xl text-black">
           <a href="blog.html">Blog</a>
@@ -53,16 +53,17 @@
             <span id="total-balance">5500</span> BDT</h2>
         </div>
       </div>
+       <!-- toggle bar -->
+     
+       <div class="container mx-auto mt-16">
+        <div class="flex items-center justify-center space-x-4">
+        <button id="donation-toggle" class="btn bg-primary font-bold text-xl text-black ">Donation</button> 
+        <button id="history-toggle" class="btn font-bold text-xl text-black ">History</button>
+    </div>
     </nav>
 
     <main>
-        <!-- toggle bar -->
-     
-            <div class="container mx-auto mt-8">
-                <div class="flex items-center justify-center mb-6 space-x-4">
-                <button id="donation-toggle" class="btn bg-primary font-bold text-xl text-black ">Donation</button> 
-                <button id="history-toggle" class="btn font-bold text-xl text-black ">History</button>
-            </div>
+       
 
              <!-- Donation page  -->
               <div id="donation-page">
