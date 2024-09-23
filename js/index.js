@@ -32,3 +32,22 @@ document.getElementById("noakhali-donate").addEventListener("click", function (e
   const result = fundCollection("noakhali-total", "noakhali-donation-amount", "total-balance");
   console.log(result); 
 });
+
+// Donate for Flood Relief in Feni,Bangladesh
+document.getElementById("feni-donate").addEventListener("click", function (event) {
+    event.preventDefault();
+  
+    const result = fundCollection("feni-total", "feni-donation-amount", "total-balance");
+    console.log(result); 
+  });
+
+
+  
+// Aid for Injured in the Quota Movement
+
+  document.getElementById("quota-donate").addEventListener("click", function (event) {
+    event.preventDefault();
+  
+    const result = fundCollection("quota-total", "quota-donation-amount", "total-balance");
+    console.log(result); 
+  });
