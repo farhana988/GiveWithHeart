@@ -25,7 +25,7 @@ function fundCollection(id1, id2, id3) {
 
   function donationHis(id, donating) {
     const his = document.createElement("div");
-    his.classList.add("bg-yellow-300");
+   
     const date = new Date();
     const options = {
       weekday: "short",
@@ -40,8 +40,8 @@ function fundCollection(id1, id2, id3) {
     const formattedDate = date.toLocaleString("en-US", options);
  
     his.innerHTML = `
-        <div class="p-12 m-3 my-6 container mx-auto border-yellow-600 border-solid border-2">
-            <h2 class="font-bold text-2xl text-black">
+        <div class="p-8 m-3 my-6 container mx-auto  border-gray-200 border-2 rounded-2xl">
+            <h2 class="font-bold text-2xl text-black mb-3">
             ${donating} Taka is Donated for ${id}</h2>
               <p>Date ${formattedDate} (Bangladesh Standard Time)</p>
         </div>
