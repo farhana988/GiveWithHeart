@@ -17,8 +17,8 @@
     ></script>
 
     <style>
-      .font- {
-        font-family: "", sans-serif;
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
       }
     </style>
     <script>
@@ -35,7 +35,7 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-lexend">
     <!-- navbar -->
     <nav class="py-11 bg-[#F9F7F3]">
       <div class="container mx-auto flex items-center justify-between px-8">
@@ -55,14 +55,16 @@
 
     <!-- faq  -->
     <section class="container mx-auto">
-      <h1 class="px-10 text-4xl lg:text-7xl font-extrabold my-10">Important FAQ</h1>
+      <h1 class="px-10 text-4xl lg:text-7xl font-extrabold my-10">
+        Important FAQ
+      </h1>
       <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
-          what is the document object model (DOM)?
+          What is the Document Object Model (DOM)?
         </div>
         <div class="collapse-content">
-          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
+          <p class="mr-9 lg:mr-16 text-black font-medium text-sm lg:text-lg">
             The Document Object Model (DOM) is a programming interface for web
             documents. It represents the page so that programs can change the
             document structure, style, and content. The DOM represents the
@@ -74,46 +76,57 @@
       <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
-          how do you select an element from the dom?
+          How do you select an element from the DOM?
         </div>
         <div class="collapse-content">
-          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
-            The getElementById() method of the Document interface returns an
-            Element object representing the element whose id property matches
-            the specified string. Since element IDs are required to be unique if
-            specified, they're a useful way to get access to a specific element
-            quickly.
+          <p class="mr-9 lg:mr-16 text-black font-medium text-sm lg:text-lg">
+         <span class="font-bold"> getElementById:</span> This method selects an element by its unique ID. It is one of the most efficient ways to access a specific element, as IDs are guaranteed to be unique within a document. 
+          <br> <span class="font-bold"> getElementsByClassName:</span> This method retrieves a live HTMLCollection of elements that share a specified class name. It is useful for selecting multiple elements at once. 
+          <br> <span class="font-bold"> getElementsByTagName:</span> This method selects elements by their tag name and returns a live HTMLCollection. It is useful for selecting all instances of a particular tag.
+
           </p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
-          what is event delegation in the context of the DOM, and why is it
+          What is event delegation in the context of the DOM, and why is it
           useful?
         </div>
         <div class="collapse-content">
-          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
-            Event delegation refers to the process of using event propagation
-            (bubbling) to handle events at a higher level in the DOM than the
-            element on which the event originated. It allows us to attach a
-            single event listener for elements that exist now or in the future.
+          <p class="mr-9 lg:mr-16 text-black font-medium text-sm lg:text-lg">
+            Event Delegation is a technique used in JavaScript to manage events more efficiently
+             by leveraging the event bubbling phase. Instead of attaching event listeners to individual 
+             child elements, you attach a single event listener to a parent element. It is useful for 
+            <br> <span class="font-bold"> Performance: </span>Reduces the number of event listeners, which can improve performance, especially with many child elements.
+            <br> <span class="font-bold">Dynamic Content: </span>Automatically handles events for dynamically added child elements, eliminating the need to reattach listeners.
+            <br> <span class="font-bold">Simpler Code: </span>Makes the code cleaner and easier to manage since you have fewer listeners to keep track of.
+
           </p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200 mb-7 lg:p-5">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl lg:text-4xl text-black font-bold">
-          how do you manipulate an element's attributes and styles using the
+          How do you manipulate an element's attributes and styles using the
           DOM?
         </div>
         <div class="collapse-content">
-          <p class="mr-9 lg:mr-16  text-black font-medium text-sm lg:text-lg">
-            The classList object only provide methods to change the class of an
-            element. If you want to change other attributes like id , href , or
-            src , you can use the setAttribute() method. The setAttribute()
-            method accepts two arguments: The name of the attribute to set.Dec
-            7, 20
+          <p class="mr-9 lg:mr-16 text-black font-medium text-sm lg:text-lg">
+            <span class="font-bold">Accessing Elements:</span> Use methods like
+            getElementById or querySelector to select elements. <br>
+
+            <span class="font-bold">Changing Attributes:</span>Modify attributes
+            with setAttribute or directly via properties, like element.src. <br>
+
+            <span class="font-bold">Adding/Removing Attributes: </span>Use
+            setAttribute to add and removeAttribute to remove attributes. <br>
+
+            <span class="font-bold">Manipulating Styles:</span> Adjust styles
+            using the style property (e.g., element.style.color = 'blue'). <br>
+
+            <span class="font-bold">Managing Classes:</span> Use classList to
+            add, remove, or toggle classes for style changes.
           </p>
         </div>
       </div>
